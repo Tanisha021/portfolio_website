@@ -64,6 +64,7 @@ const ContactForm = styled.form`
   background-color: ${({ theme }) => theme.card};
   padding: 32px;
   border-radius: 16px;
+  border: 0.1px solid #854CE6;
   box-shadow: 1px 1px 10px #262a2e, -4px -4px 14px #262a2e;
   margin-top: 28px;
   gap: 12px;

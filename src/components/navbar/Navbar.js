@@ -31,7 +31,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu]=useState(false)
   return (
     <div className="w-full h-24 sticky top-0 z-50 px-10 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
-      <div className="flex items-center">
+      <div className="flex items-center ">
         <img className="h-12 w-12  rounded-full " src={face_logo_1} alt="face_logo" />
         {/* <h3 className='text-xl text-purple-500 '>TAN TAN</h3> */}
       </div>

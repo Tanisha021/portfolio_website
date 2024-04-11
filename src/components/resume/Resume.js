@@ -28,7 +28,7 @@ const Resume = () => {
               educationData
                 ? "border-designColor rounded-lg"
                 : "border-transparent"
-            } resumeLi`}
+            } resumeLi `  }
           >
             Education
           </li>

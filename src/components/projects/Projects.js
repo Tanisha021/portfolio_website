@@ -17,30 +17,30 @@ const Projects = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
         <ProjectsCard
-          title="SOCIAL MEDIA CLONE"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          title="Watt Watch"
+          des="Created a mobile app to manage water and electricity usage, guiding users to meet consumption goals through behavioral changes. Features separate tabs for tracking electricity and water usage."
           src={projectOne}
+          git="https://github.com/Tanisha021/WattWatch"
         />
         <ProjectsCard
-          title="E-commerce Website"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          title="Ecomnia: The Ecommerce Analyser"
+          des="Ecomnia: Advanced ecommerce analysis tool with dual website analysis, powerful price prediction using Random Forest Regression, and graphical visualization for comprehensive product data insights, backed by machine learning for robust ecommerce analytics."
           src={projectTwo}
+          git="https://github.com/Tanisha021/Ecomnia"
         />
         <ProjectsCard
-          title="Chatting App"
+          title="Prompt Me"
+          des=" Created Prompt Me, a tool for modern creators to discover, create, and share creative prompts. Users input tags or descriptions, and it generates related prompts for inspiration."
+          src={projectThree}
+          git="https://github.com/Tanisha021/prompt-me"
+        />
+        {/* <ProjectsCard
+          title="SOCIAL MEDIA CLONE"
           des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
           src={projectThree}
         />
         <ProjectsCard
-          title="SOCIAL MEDIA CLONE"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectThree}
-        />
-        <ProjectsCard
           title="E-commerce Website"
           des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
@@ -51,7 +51,7 @@ const Projects = () => {
           des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
           src={projectTwo}
-        />
+        /> */}
       </div>
     </section>
   );

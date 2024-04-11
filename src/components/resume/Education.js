@@ -10,35 +10,36 @@ const Education = () => {
       className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
     >
       {/* part one */}
-      <div>
+      <div className='w-1/2'>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">1998 - 2010</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Education Quality</h2>
+          <p className="text-sm text-designColor tracking-[4px]">2019-2024</p>
+          <h2 className="text-3xl md:text-4xl font-bold">Education</h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
-            title="BSc in Computer Science"
-            subTitle="University of DVI (2006 - 2010)"
-            result="3.90/4"
-            des="The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture."
+            subTitle="BTech in Computer Science & Engineering (Till 6th sem)"
+            title="Pandit Deendayal Energy University "
+            result="9.2/10"
+            des="Learnings: DSA (Data Structure and Algorithm), Discrete Mathematics, OOPs with Java,
+             Design and Analysis of Algorithm, Design Pattern,Database Management System (DBMS), Operating System (OS), Theory of Computation (TOC), Advance Python, Computer Networks, Cryptography and Information Security, Web Technology, Software Engineering, System Software & Compiler Design, Artifical Intelligence (Ai), Cloud Computing, Big Data Analytics, Industry 4.0, Accounting."
           />
           <ResumeCard
-            title="AS - Science & Information"
-            subTitle="SuperKing College (2001 - 2005)"
-            result="4.75/5"
-            des="Higher education is tertiary education leading to award of an academic degree. Higher education, also called post-secondary education."
+            title="Green Valley High School"
+            subTitle="Higher Secondary School Education (May 2021)"
+            result="90%"
+            des="Higher Secondary Education passed 12th grade being in dummy school."
           />
           <ResumeCard
-            title="Secondary School Education"
-            subTitle="Kingstar Secondary School (1998 - 2000)"
-            result="5.00/5"
-            des="Secondary education or post-primary education covers two phases on the International Standard Classification of Education scale."
+            subTitle="Secondary School Education (May 2019)"
+            title="Delhi Public School "
+            result="89%"
+            des="High Schooling passed 10 grade being a dipsite"
           />
         </div>
       </div>
       {/* part Two */}
 
-      <div>
+      {/* <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
           <p className="text-sm text-designColor tracking-[4px]">2010 - 2022</p>
           <h2 className="text-3xl md:text-4xl font-bold">Job Experience</h2>
@@ -63,7 +64,7 @@ const Education = () => {
             des="The Oman economy has grown strongly over recent years, having transformed itself from a producer and innovation-based economy."
           />
         </div>
-      </div>
+      </div> */}
     </motion.div>
   );
 }

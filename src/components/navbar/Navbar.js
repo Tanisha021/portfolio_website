@@ -3,15 +3,37 @@ import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import {logo} from "../../assets/index"
+import {face_logo_1} from "../../assets/index"
 import { navLinksdata } from '../../constants';
+import styled from 'styled-components';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import GitHub from '@mui/icons-material/GitHub';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import { Bio } from '../../data/data.js'
+const SocialMediaIcons = styled.div`
+  display: flex;
+`;
+
+const SocialMediaIcon = styled.a`
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  color: ${({ theme }) => theme.text_primary};
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+  }
+`;
 
 const Navbar = () => {
   const [showMenu, setShowMenu]=useState(false)
   return (
-    <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
-      <div>
-        <img src={logo} alt="logo" />
+    <div className="w-full h-24 sticky top-0 z-50 px-10 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
+      <div className="flex items-center">
+        <img className="h-12 w-12  rounded-full " src={face_logo_1} alt="face_logo" />
+        {/* <h3 className='text-xl text-purple-500 '>TAN TAN</h3> */}
       </div>
       <div>
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
@@ -43,7 +65,7 @@ const Navbar = () => {
           <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
-                <img className="w-32" src={logo} alt="logo" />
+                <img className="w-32" src={face_logo_1} alt="logo" />
                 <p className="text-sm text-gray-400 mt-2">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Earum soluta perspiciatis molestias enim cum repellat, magnam
@@ -75,9 +97,9 @@ const Navbar = () => {
                   Find me in
                 </h2>
                 <div className="flex gap-4">
-                  <span className="bannerIcon">
+                  {/* <span className="bannerIcon">
                     <FaFacebookF />
-                  </span>
+                  </span> */}
                   <span className="bannerIcon">
                     <FaTwitter />
                   </span>
@@ -96,6 +118,14 @@ const Navbar = () => {
           </div>
         )}
       </div>
+      
+      <SocialMediaIcons>
+          <SocialMediaIcon href={Bio.github} target="display"><GitHub /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.twitter} target="display"><TwitterIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon>
+        </SocialMediaIcons>
+    
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import { HiArrowRight } from "react-icons/hi";
+import { screen } from "../../assets/index";
 
 const Card = ({item:{title,des,icon}}) => {
   return (
@@ -23,6 +24,7 @@ const Card = ({item:{title,des,icon}}) => {
             <h2 className="text-xl md:text-2xl font-titleFont font-bold text-gray-300">
               {title}
             </h2>
+            {/* <img src="./images/screen.svg"/> */}
             <p className="base">{des}</p>
             {/* <span className="text-2xl text-designColor">
               <HiArrowRight />

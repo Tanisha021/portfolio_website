@@ -10,8 +10,9 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 position: relative;
-z-index: 1;
+margin-top:120px;
 align-items: center;
+height:100vh;
 @media (max-width: 960px) {
     padding: 0px;
 }

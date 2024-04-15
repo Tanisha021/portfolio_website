@@ -1,5 +1,7 @@
 import { AiFillAppstore } from "react-icons/ai";
 import { FaMobile, FaGlobe} from "react-icons/fa";
+import { MdComputer } from "react-icons/md";
+import { FaVideo } from "react-icons/fa";
 import { SiProgress, SiAntdesign } from "react-icons/si";
 
 // Features Data
@@ -23,7 +25,7 @@ export const featuresData = [
   // },
   {
     id: 4,
-    icon: <FaMobile />,
+    icon: <MdComputer />,
     title: "Web Development",
     des: "Skilled in web development, focusing on creating user-friendly interfaces. Experienced in HTML, CSS, JavaScript, React.js, Node.js, and MongoDB. Enthusiastic about creating seamless, engaging experiences.",
   },
@@ -35,8 +37,8 @@ export const featuresData = [
   },
   {
     id: 6,
-    icon: <FaGlobe />,
-    title: "Visual Storyteller and Editor",
+    icon: <FaVideo />,
+    title: "Video Editor",
     des: "Experienced in visual storytelling and video editing, with expertise in Adobe Premiere Pro. Skilled in crafting engaging narratives and enhancing visual content to captivate audiences.",
   },
 ];

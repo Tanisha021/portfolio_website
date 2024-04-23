@@ -9,8 +9,8 @@ const Achievement = () => {
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
       className="py-12 font-titleFont flex gap-20"
     >
-      <div className="w-1/2">
-        <div className="py-12 font-titleFont flex flex-col gap-4">
+      <div className="w-full md:w-1/2">
+        <div className="py-12 font-titleFont flex flex-col gap-4 ml-10 md:ml-0">
           <p className="text-sm text-designColor tracking-[4px]"></p>
           <h2 className="text-4xl font-bold">Certifications</h2>
         </div>

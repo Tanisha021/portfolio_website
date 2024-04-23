@@ -67,9 +67,7 @@ const Navbar = () => {
               <div>
                 <img className="w-32" src={face_logo_1} alt="logo" />
                 <p className="text-sm text-gray-400 mt-2">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Earum soluta perspiciatis molestias enim cum repellat, magnam
-                  exercitationem distinctio aliquid nam.
+                I'm all about building cool stuff online. I've got a thing for creating sleek, clean UIs that make the web a better place. Let's make user experiences smoother together!
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
@@ -100,12 +98,12 @@ const Navbar = () => {
                   {/* <span className="bannerIcon">
                     <FaFacebookF />
                   </span> */}
-                  <span className="bannerIcon">
-                    <FaTwitter />
-                  </span>
-                  <span className="bannerIcon">
-                    <FaLinkedinIn />
-                  </span>
+                  <SocialMediaIcons>
+          <SocialMediaIcon href={Bio.github} target="display"><GitHub /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.twitter} target="display"><TwitterIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon>
+        </SocialMediaIcons>
                 </div>
               </div>
               <span
@@ -118,14 +116,14 @@ const Navbar = () => {
           </div>
         )}
       </div>
-      
-      <SocialMediaIcons>
+      <div className="hidden md:flex ">
+        <SocialMediaIcons>
           <SocialMediaIcon href={Bio.github} target="display"><GitHub /></SocialMediaIcon>
           <SocialMediaIcon href={Bio.twitter} target="display"><TwitterIcon /></SocialMediaIcon>
           <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
           <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon>
         </SocialMediaIcons>
-    
+      </div>
     </div>
   );
 }
